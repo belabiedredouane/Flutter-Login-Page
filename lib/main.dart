@@ -55,13 +55,27 @@ class _MyHomePageState extends State<MyHomePage> {
   bool v = false;
   bool p1 = true;
 
+  get children => null;
+
   @override
   Widget build(BuildContext context) {
     return (p1)
         ? Scaffold(
+            drawer: Drawer(
+              backgroundColor: Color.fromARGB(255, 228, 225, 225),
+              child: ListView(
+                children: [
+                  SingleChildScrollView(
+                    child: Column(
+                      children: [Text("test1"), Text("test2")],
+                    ),
+                  ),
+                ],
+              ),
+            ),
             appBar: AppBar(
               title: Text("Learn Coding"),
-              leading: Icon(Icons.logo_dev),
+              //leading: Icon(Icons.logo_dev),
             ),
             body: SingleChildScrollView(
               child: Container(

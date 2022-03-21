@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, camel_case_types, prefer_const_constructors_in_immutables
+// ignore_for_file: file_names
 
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/main.dart';
